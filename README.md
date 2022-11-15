@@ -13,9 +13,11 @@ f(x) = -12x^4*sin(cos(x)) - 18x^3+5x^2 + 10x - 30
 
 2.3.Невозможно определить на каком диапазоне возрастает или убывает функция, так как их бесконечное количество
 
-56.png
+<image src="/Users/Roman/Documents/YuliyaGB/Python/python_final_task/python_final_task/56.jpg">
 
-67.png
+
+
+<image src="/Users/Roman/Documents/YuliyaGB/Python/python_final_task/python_final_task/67.jpg">
 
 5. При определении экстремумов вычисляется производная f(x). Функция ериодическая и имеет бесконечное множество экстремумов.
 

@@ -22,17 +22,25 @@ def change_color():
         color = 'b'
     else:
         color = 'r'
+    return color
 
 for i in range(len(x)-1):
     if func_direct == -1:
-       if func(x[i], *koef < func(x[i+1], *koef):
-            x_change.append((x[i], (func(x[i], *koef)))
+       if func(x[i], *koef < func(x[i+1], *koef)):
+            x_change.append((x[i], (func(x[i], *koef))))
             func_direct = 1
 
     else:
-       if func(x[i], *koef > func(x[i+1], *koef):
-            x_change.append((x[i], (func(x[i], *koef)))
+       if func(x[i], *koef > func(x[i+1], *koef)):
+            x_change.append((x[i], (func(x[i], *koef))))
             func_direct = -1
+
 
 print(x_change)
 print(len(x_change))
+
+for i in range(len(x_change)-1):
+    x_range = np.arange(x_change[i][0], x_change[i+1][0], 0.1)
+    plt.plot(x_range, func(x_range, *koef), change_color())
+
+plt.show()

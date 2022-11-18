@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 # f(x) = -12x^4*sin(cos(x)) - 18x^3+5x^2 + 10x - 30
 
 koef = [-12, -18, 5, 10. -30]
+x_limit [-300, 300]
 
 x = np.arange(x_limit[0]), [x_limit[1], 0.1]
 
@@ -39,8 +40,14 @@ for i in range(len(x)-1):
 print(x_change)
 print(len(x_change))
 
+
+x_range = np.arange(x_limit[0], x_change[0][0], 0.1)
+plt.plot(x_range, func(x_range, *koef), change_color())
 for i in range(len(x_change)-1):
     x_range = np.arange(x_change[i][0], x_change[i+1][0], 0.1)
     plt.plot(x_range, func(x_range, *koef), change_color())
+x_range = np.arange(x_change[len(x_change)-1][0], x_limit[1], 0.1)
+plt.plot(x_range, func(x_range, *koef), change_color())
+
 
 plt.show()
